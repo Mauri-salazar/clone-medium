@@ -35,4 +35,4 @@ UserSchema.methods.AddFollower = function (fs) {
     this.followers.push(fs);
 };
 
-module.exports = mongoose.model('User', UserSchema);
+module.exports = mongoose.model('User', UserSchema);     

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+// Creating an outline for the definition of the document structure
 let ArticleSchema = new mongoose.Schema(
     {
         text: String,
@@ -44,4 +45,6 @@ ArticleSchema.methods.getUserArticle = function (_id) {
     })
 };
 
+
+//converting the schema in a model for can to use 
 module.exports = mongoose.model('Article', ArticleSchema);
